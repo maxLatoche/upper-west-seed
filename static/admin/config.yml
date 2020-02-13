@@ -15,6 +15,8 @@ media_library:
     previewStep: true
     clearable: true
 
+media_folder: "static/images/uploads"
+
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
     label: 'Page'
