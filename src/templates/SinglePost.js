@@ -14,7 +14,7 @@ export const SinglePostTemplate = ({
   nextPostURL,
   prevPostURL,
   categories = []
-}) => console.log('date', date) || (
+}) => (
   <main>
     <article
       className="SinglePost section light"
@@ -33,8 +33,7 @@ export const SinglePostTemplate = ({
                 itemProp="dateCreated pubdate datePublished"
                 datetime={date}
               >
-                {date.toString()}
-                !!!!1234
+                {date instanceof Date ? date.toLocaleDateString() : date}
               </time>
             )}
             {categories && (
