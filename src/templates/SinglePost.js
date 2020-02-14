@@ -14,7 +14,7 @@ export const SinglePostTemplate = ({
   nextPostURL,
   prevPostURL,
   categories = []
-}) => (
+}) => console.log('date', date) || (
   <main>
     <article
       className="SinglePost section light"
