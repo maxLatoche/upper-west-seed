@@ -35,6 +35,6 @@ CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
 CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
   <BlogIndexTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
+CMS.registerPreviewTemplate('posts', ({ entry }) => console.log('posts entry', entry) || (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
