@@ -33,7 +33,7 @@ export const SinglePostTemplate = ({
                 itemProp="dateCreated pubdate datePublished"
                 date={date}
               >
-                {date}
+                {/* {date} */} 1234
               </time>
             )}
             {categories && (
