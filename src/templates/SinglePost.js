@@ -31,9 +31,10 @@ export const SinglePostTemplate = ({
               <time
                 className="SinglePost--Meta--Date"
                 itemProp="dateCreated pubdate datePublished"
-                date={date}
+                datetime={date}
               >
-                {/* {date} */} 1234
+                {date.toString()}
+                !!!!1234
               </time>
             )}
             {categories && (
@@ -89,6 +90,7 @@ export const SinglePostTemplate = ({
 
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts } }) => {
+  console.log(post)
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   return (
     <Layout
